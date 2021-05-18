@@ -376,6 +376,6 @@ app.get('/traspasos', fun3)
 app.get('/buscador/:funcion/:valor', fun4)
 app.get('/competiciones/:rey', fun5)
 
-app.listen(port, () => {
+app.listen(process env PORT || 3000) => {
   console.log(`Listening...`)
 })
